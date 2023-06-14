@@ -13,9 +13,8 @@ spec:
   placement:
     clusterAffinity:
       clusterNames:
-        - member1
-        - member2
-        - member3
+        - c1
+        - c2
     replicaScheduling:
       replicaSchedulingType: Divided
       replicaDivisionPreference: Weighted
@@ -28,8 +27,4 @@ spec:
           - targetCluster:
               clusterNames:
                 - member2
-            weight: 1
-          - targetCluster:
-              clusterNames:
-                - member3
             weight: 1
